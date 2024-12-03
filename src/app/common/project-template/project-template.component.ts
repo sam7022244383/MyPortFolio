@@ -29,7 +29,7 @@ export class ProjectTemplateComponent {
       projectName: 'BOOTCAMP',
       description: 'The Project Gives Feasibility For IMRIEL TECHNOLOGY Employees To Undergo The Specific Training Which Will Be Assigned By Their Respective Mentor. Similar To Udemy.',
       skills: [
-        { skillname: 'C#', img: '../../../assets/skills/c-sharp.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
         { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
         { skillname: 'Angular', img: 'assets/skills/Angular.png' },
         { skillname: 'TypeScript', img: 'assets/skills/typescript.png' },
