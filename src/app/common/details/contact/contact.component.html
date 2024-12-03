@@ -1,0 +1,20 @@
+<div class="p-1.5 mt-4 mb-1 ml-1 mr-1 bg-white shadow-md animate-slideIn-1 900px:p-3 m-6">
+    <div class="flex flex-col w-full">
+        <div class="w-full">
+          <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-4 relative bg-transparent inline-flex items-center w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none cursor-default">
+            <div class="text-left tracking-[0.2em] text-xl md:text-3xl font-bold m-2 uppercase animate-slideIn-2">
+              contact
+            </div>
+            <span class="absolute w-0 h-0.5 left-0 bottom-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+            <span class="absolute w-0 h-0.5 right-0 top-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+          </button>
+          <hr class="border-t-2 border-black mb-2 mt-2 animate-slideIn-3">
+        </div>
+        <div class="flex flex-col w-full p-4">
+          <div class="text-left text-base md:text-sm uppercase mb-4 mt-4 animate-slideIn-4">
+            PLACES TO REACH ME
+          </div>
+          <app-social-icons class="animate-slideIn-5"></app-social-icons>
+        </div>
+      </div>
+</div>

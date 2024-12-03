@@ -1,0 +1,55 @@
+<div class="p-1.5 mt-4 mb-1 ml-1 mr-1 bg-white shadow-md animate-slideIn-1 900px:p-3 m-6">
+    <div class="flex flex-col w-full">
+        <div class="w-full">
+            <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-4 relative bg-transparent inline-flex items-center w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none cursor-default">
+                <div class="text-left tracking-[0.2em] text-xl md:text-3xl font-bold m-2 uppercase animate-slideIn-2">
+                  Personal details
+                </div>
+                <span class="absolute w-0 h-0.5 left-0 bottom-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+                <span class="absolute w-0 h-0.5 right-0 top-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+              </button>
+              <hr class="border-t-2 border-black mb-6 mt-6 animate-slideIn-3">
+        </div>
+        <div class="flex flex-col w-full p-4">
+            <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase mb-4 mt-4 animate-slideIn-4">
+                My Story
+              </div>
+              <div class="text-left animate-slideIn-5">
+                <ul class="list-disc list-inside space-y-1 ml-6">
+                  <li>We are a family of 4, having one Older Brother. Leaving in <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1Tcwzs4uqzJg9GJPysxKLCgtAgA_RwZ3&q=bijapur&rlz=1C1GCEB_enIN1051IN1051&oq=bijap&gs_lcrp=EgZjaHJvbWUqEAgBEC4YkQIYsQMYgAQYigUyEwgAEAAYkQIY4wIYsQMYgAQYigUyEAgBEC4YkQIYsQMYgAQYigUyDQgCEC4YkQIYgAQYigUyBggDEEUYOTIKCAQQABixAxiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGDzSAQg0NTM2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">Vijaypura</a>,Karnatak, India.</li>
+                  <li>I completed my High school (Batch 2014) in my native and also  my higher secondary school (Batch 2016), specializing in the science stream.</li>
+                  <li>I had Scored 100 out of 100 in Chemistry for 12th Board Exam. and I got good CET Ranking for pursuing My Engineering Journey </li>
+                  <li>Then I went to Hubbali Karnataka for Studing Engineering.</li>
+                  <li>At 23, I graduated from <a href="https://www.kletech.ac.in/" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">BVBCET</a>, Karnataka, India as a mechanical engineer (Batch 2020).</li>
+                  <li>At the end of 2020, I got Placed In SLK Software Services and I started my career with <a href="https://www.slksoftware.com/" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">SLK</a> and moved to <a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9807628,77.4757576,11z/data=!4m6!3m5!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627!16zL20vMDljMTc?entry=ttu" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">Bangalore</a>.</li>
+                </ul>
+              </div>
+              <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase mb-4 mt-4 animate-slideIn-4">
+                Things I Enjoy
+              </div>
+              <div class="text-left animate-slideIn-5">
+                <ul class="list-disc list-inside space-y-1 ml-6">
+                  <li>Bike Riding <fa-icon [icon]="faMotorcycle"></fa-icon></li>
+                  <li>Exercise <fa-icon [icon]="faDumbbell"></fa-icon></li>
+                  <li>Table Tennis <fa-icon [icon]="faTableTenis"></fa-icon></li>
+                  <li>Volleyball <fa-icon [icon]="faVolleyball"></fa-icon></li>
+                  <li>Cycling <fa-icon [icon]="faBicycle"></fa-icon></li>
+                </ul>
+              </div>
+              <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase mb-4 mt-4 animate-slideIn-4">
+                Dreams I Chase
+              </div>
+              <div class="text-left animate-slideIn-5">
+                <ul class="list-disc list-inside space-y-1 ml-6">
+                  <li>Leading with purpose</li>
+                  <li>Creating innovative tech solutions</li>
+                  <li>Achieving a balanced life</li>
+                  <li>Pursuing lifelong learning</li>
+                  <li>Mentor young minds</li>
+                </ul>
+              </div>
+        </div>
+
+    </div>
+
+</div>

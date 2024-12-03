@@ -1,0 +1,91 @@
+<div class="p-1.5 mt-4 mb-1 ml-1 mr-1 bg-white shadow-md animate-slideIn-1 900px:p-3 m-6">
+    <div class="w-full">
+        <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-1 relative bg-transparent w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none 900px:p-3 cursor-default">
+            <div class="text-left tracking-[0.2em] text-xl md:text-3xl font-bold uppercase animate-slideIn-2">
+              Experience
+            </div>
+            <h4 class="text-black-500 text-left text-xs animate-slideIn-3 900px:py-2">({{timespanTotal()}})</h4>
+            <span class="absolute w-0 h-0.5 left-0 bottom-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+            <span class="absolute w-0 h-0.5 right-0 top-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+          </button>
+          <hr class="border-t-2 border-black animate-slideIn-5 900px:mb-2 mt-2">
+    </div>
+    <div class="flex flex-col w-full p-2 900px:p-4">
+        <div class="text-left tracking-[0.17em] text-base mb-2 md:text-sm font-bold uppercase animate-slideIn-4 900px:mb-4">
+            professional summary
+        </div>
+        <div class="text-left animate-slideIn-5">
+            <ul class="list-disc list-inside space-y-1 ml-6">
+                <li>expertise in designing, developing, and deploying complex applications, skilled in rapid adaptation to new technologies.</li>
+                <li>Strong command of SDLC, Agile and Waterfall methodologies, with proven success in troubleshooting and   resolving technical challenges.</li>
+                <li>Writing Clean, Scalable Code Using C# Programming Language.</li>
+                <li>Reviewing the Pull Requests of fellow developers and Handling The Build And Deployments In Dev , Test, Uat , Prod, and Training.</li>
+                <li>Proficient in stakeholder collaboration, aligning projects to business needs, and developing proof of concepts (POCs) to demonstrate technical feasibility.</li>
+                <li>Dedicated to continuous learning and professional development, with a keen interest in emerging technologies.</li>
+                <li>Focused on optimizing application performance, scalability, and security in cloud environments, with a commitment to continuous learning and professional growth.</li>
+                <li>Highly motivated to learn and adopt new technologies, consistently seeking opportunities for  Growth.</li>
+              </ul>
+        </div>
+        <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase mb-2 mt-2 animate-slideIn-4 900px:mb-4 mt-4">
+            organizations
+        </div>
+        <div class="flex items-center justify-center bg-white px-6 900px:px-20 p-2 animate-slideIn-2 900px:p-4">
+            <div class="space-y-6 border-l-2 border-dashed">
+                <div class="relative w-full animate-slideIn-3">
+                    <img src="assets/logo/Imriel logo.png" alt="Profile" class="absolute -top-1 z-10 -ml-5 h-10 w-10 text-blue-500">
+                    <div class="ml-6 animate-slideIn-4">
+                      <h4 class="font-bold text-blue-500 animate-slideIn-5">Senior Software Engineer</h4>
+                      <a href="https://imriel.com/" target="_blank" class="font-bold text-gray-600 underline decoration-dotted underline-offset-2 decoration-1 animate-slideIn-9 hover:text-sky-500">IMRIEL Technology Solutions Private Ltd</a>
+                      <p class="mt-2 max-w-screen-sm text-sm text-gray-500 animate-slideIn-10">Pune, Maharashtra, India</p>
+                      <span class="mt-1 block text-sm font-semibold text-blue-700 animate-slideIn-11">April 2023 - Present ({{timespan()}})</span>
+                    </div>
+                  </div>
+                  <div class="relative w-full animate-slideIn-3">
+                    <img src="assets/logo/SLK logo.png" alt="Profile" class="absolute -top-1 z-10 -ml-5 h-10 w-10 rounded-full text-blue-500">
+                    <div class="ml-6 animate-slideIn-4">
+                      <h4 class="font-bold text-blue-500 animate-slideIn-5">Associate Software Engineer </h4>
+                      <a href="https://www.slksoftware.com/" target="_blank" class="font-bold text-gray-600 underline decoration-dotted underline-offset-2 decoration-1 animate-slideIn-9 hover:text-sky-500">SLK</a>
+                      <p class="mt-2 max-w-screen-sm text-sm text-gray-500 animate-slideIn-10">Bengaluru, Karnataka, India</p>
+                      <span class="mt-1 block text-sm font-semibold text-blue-700 animate-slideIn-11">Dec 2020 - Dec 2022 (2 years)</span>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="text-left tracking-[0.17em] text-sm font-semibold uppercase mb-2 mt-2 animate-slideIn-4 900px:mb-4 mt-4 ">
+            <a href="https://imriel.com/" target="_blank" class="decoration-1 hover:text-sky-500">IMRIEL Technology Solutions Private Ltd</a>
+        </div>
+        <div class="text-left animate-slideIn-5">
+            <ul class="list-disc list-inside space-y-1 ml-6">
+              <li>Built full-stack applications using Angular, Web API, MS SQL, and Microsoft Azure.</li>
+              <li>Quickly mastered new technologies and delivered effective solutions.</li>
+              <li>Worked on various projects</li>
+              <li>Committed to continuous learning and attending training programs.</li>
+              <li>Applied best practices to ensure high-quality code and efficient processes.</li>
+              <li>Received client recognition for delivering optimal solutions promptly.</li>
+              <li>Handled both front-end and back-end aspects of web applications.</li>
+              <li>Assisted in designing, developing, analyzing, testing, and debugging modern web applications.</li>
+            </ul>
+          </div>
+          <div class="text-left tracking-[0.17em] text-sm font-semibold uppercase mb-2 mt-2 animate-slideIn-4 900px:mb-4 mt-4 ">
+            <a href="https://www.slksoftware.com/" target="_blank" class="decoration-1 hover:text-sky-500">SLK</a>
+          </div>
+          <div class="text-left animate-slideIn-5">
+            <ul class="list-disc list-inside space-y-1 ml-6">
+                <li>Maintained regular client communication to align project goals and address concerns.</li>
+                <li>Single resource to the project doing full-stack development independently without a team lead and technical lead.</li>
+                <li>Reviewing the PR of fellow developers.</li>
+                <li>Participating in the requirements analysis.</li>
+                <li>Writing clean, scalable code using C# programming language.</li>
+                <li>Debugging the code and improving the existing software.</li>
+                <li>Interacting with clients.</li>
+                <li>Handling the build and deployments in DEV, TEST, UAT, PROD, and TRAINING.</li>
+                <li>Handling the releases independently.</li>
+                <li>Understanding the clients' priorities and their point of view and giving feasible solutions to them.</li>
+                <li>Following Agile software development methodology.</li>
+                <li>Decoupling of the code so that the same functionality can be used in different places based on requirements.</li>
+                <li>If any issue arises in any of the environments, I am the first point of contact as I am the single developer in the project, so I need to be available at every point in time if any issues arise in any of the environments.</li>
+                <li>Coordinating with the QA team and business analyst.</li>
+            </ul>
+          </div>
+    </div>
+</div>

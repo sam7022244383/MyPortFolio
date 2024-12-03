@@ -1,0 +1,53 @@
+<div class="p-1.5 mt-4 mb-1 ml-1 mr-1 bg-white shadow-md animate-slideIn-1 900px:p-3 m-6">
+    <div class="flex flex-col w-full">
+        <div class="w-full">
+          <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-1 relative bg-transparent inline-flex items-center w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none 900px:p-4 cursor-default">
+            <div class="text-left tracking-[0.2em] text-xl md:text-3xl font-bold m-2 uppercase animate-slideIn-2">
+              about this site
+            </div>
+            <span class="absolute w-0 h-0.5 left-0 bottom-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+            <span class="absolute w-0 h-0.5 right-0 top-0 {{currentColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+          </button>
+          <hr class="border-t-2 border-black mb-6 mt-6 animate-slideIn-3">
+        </div>
+        <div class="flex flex-col w-full p-2 900px:p-4 animate-slideIn-4">
+            <div class="border p-2 900px:p-6">
+                <h2 class="mb-2 animate-slideIn-5">Thank you for visiting my website !</h2>
+                <p class="text-left animate-slideIn-5">
+                    I appreciate your interest in my work. Here, you can explore my professional background, review my portfolio. have questions, or wish to connect, I encourage you to reach out.
+                </p>
+                <div class="text-left tracking-[0.17em] text-base md:text-sm font-semibold uppercase my-3 animate-slideIn-5 900px:my-4">
+                    Details
+                </div>
+                <div>
+                    <div class="text-left text-sm mx-6 animate-slideIn-6">
+                        Technologies used :
+                    </div>
+                    <div class="flex flex-wrap mx-6 mb-2 gap-1 px-1 py-3 animate-slideIn-7">
+                        <div *ngFor="let skill of skills">
+                            <div class="flex justify-center items-center border-sky-200 bg-white rounded-lg h-8 px-1 900px:h-10 border-2 animate-slideIn-4">
+                              <img [src] = "skill.img" [alt]="skill.skillname" class="w-4 h-4 900px:w-6 900px:h-6">
+                              <span class="text-xs 900px:p-1 pl-2 font-semibold">{{skill.skillname}}</span>
+                          </div>
+                    </div>
+                </div>
+                <div *ngFor="let detail of details" class="flex flex-col m-6">
+                    <div class="flex flex-row grid grid-cols-2">
+                        <p class="text-left animate-slideIn-7">{{detail.title}}</p>
+                        <p class="text-left animate-slideIn-8">{{detail.data}}</p>
+                    </div>
+                    <hr class="border-1 border-gray-200 mb-6 mt-6 animate-slideIn-3">
+                </div>
+                
+                <div class="group flex justify-center flex-col items-center m-6 px-12 py-4 border shadow-md shadow-sky-500/50 hover:shadow-sky-500 animate-slideIn-9">
+                    <div class="font-serif text-gray-500 text-center text-lg italic group-hover:not-italic">
+                        "{{currentQuote.quote}}"
+                    </div>
+                    <div class="italic text-gray-500 group-hover:not-italic">
+                        - {{currentQuote.author}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="flex flex-wrap gap-4 p-2 900px:p-6">
+    <div *ngFor="let certification of certifications" class="relative flex w-28 h-24 perspective 900px:w-48 900px:h-48">
+        <div (mouseenter)="toggleFlip(certification,true)" (mouseleave)="toggleFlip(certification,false)" [@flipAnimation]="certification.flip ? 'flipped' : 'default'" class="absolute w-full h-full transform-style-3d transition-transform duration-500">
+          <div class="absolute backface-hidden w-full h-full border-2 bg-white shadow-2xl flex items-center justify-center">
+            <img [src]="certification.img" [alt]="certification.certificationName">
+          </div>
+          <img src="assets/Certification Badge/tap.png" class="w-4 h-4 backface-hidden border-2 bg-white rounded-full absolute z-1 p-1 m-[3px] 900px:w-6 900px:m-2 900px:h-6">
+          <div class="absolute backface-hidden w-full h-full border shadow-2xl flex p-2 rotate-y-180 900px:p-4">
+                <div>
+                    <h3 class="font-bold text-[7px] text-black-500 900px:text-sm">{{certification.certificationName}}</h3>
+                    <h3 class="text-[7px] text-black-200 900px:text-sm mt-1">{{certification.issuedBy}}</h3>
+                    <p class="mt-0.5 text-[6px] max-w-screen-sm text-gray-500 900px:text-xs mt-2">Issued {{certification.issuedDate}}</p>
+                    <p class="mt-0.5 text-[6px] max-w-screen-sm text-gray-500 900px:text-xs mt-2">Cred ID {{certification.credentialID}}</p>
+                    <a [href]="certification.credentialLink" target="_blank" class="underline text-[6px] m-0.5 text-blue-500 decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700 900px:text-xs mt-1">Show Credential</a>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>

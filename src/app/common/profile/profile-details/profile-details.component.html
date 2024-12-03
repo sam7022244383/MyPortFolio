@@ -1,0 +1,49 @@
+<div class="px-4 mx-auto max-w-xs sm:px-6 lg:px-8">
+    <div class="text-center animate-scale-wave delay-1">
+      <img class="object-cover w-36 h-36 mx-auto rounded-full" src="assets/Sami Profile.jpg" alt="Profile Picture" />
+      <div>
+        <p class="mt-6 text-base text-black-800 font-serif font-semibold animate-scale-wave uppercase delay-2 tracking-[0.1em]">Samiulla Mujawar</p>
+      </div>
+      <div class="group animate-scale-wave delay-3 pl-7">
+        <button (mouseover)="changeColor()" (click)="copyToClipboard()" class="p-3 cursor-pointer relative font-normal border-0 flex items-center justify-center bg-transparent {{currentColor}} h-auto w-[200px] overflow-hidden transition-all duration-100"> 
+          <span class="group-hover:w-full absolute left-0 h-full w-5 border-y-2 border-l-2 {{currentColor}} transition-all duration-500"></span>
+          <span class="group-hover:opacity-0 text-sm pb-1 group-hover:translate-x-[-100%] absolute text-black-500 translate-x-0 transition-all duration-200">samimujawar7&#64;gmail.com</span>
+          <span class="group-hover:translate-x-0 group-hover:opacity-100 absolute text-sm pb-1 text-black-500 translate-x-full opacity-0 transition-all duration-200">Click To Copy</span>
+          <span class="group-hover:w-full absolute right-0 h-full w-5 border-y-2 border-r-2 {{currentColor}} transition-all duration-500"></span>
+        </button>
+      </div>   
+    </div>
+  </div>
+  <hr class="my-4 animate-scale-wave delay-4">
+  <div class="text-left animate-scale-wave delay-5">
+    <h2 class="text-sm font-semibold text-black tracking-[0.2em]">ABOUT</h2>
+    <p class="mt-2 text-black-500 text-sm">
+        Hello, I'm Sami. I'm passionate about transforming ideas into innovative solutions. I hold a degree from 
+        <a href="https://www.kletech.ac.in/" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">KLE Technological University BVB</a>, Hubballi
+        and currently serving as a Senior Software Developer at
+        <a href="https://imriel.com/" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700"> IMRIEL</a> in Pune. 
+        Before joining IMRIEL, I gained valuable experience at   
+        <a href="https://www.slksoftware.com/" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700">SLK</a> in Bangalore.
+      </p>
+      <button (click)="navigateToPersonal()" (mouseover)="changeAnimationColor()" class="mt-4 group animate-scale-wave delay-6 relative border-black border-1 border shadow-xl inline-flex items-center px-3 py-1.5 bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-2xl hover:border-none active:top-0.5 focus:outline-none">
+        <!-- span::before -->
+        <span class="absolute h-0 w-0.5 right-0 top-0 {{currentAnimationColor}} transition-all duration-500 ease-out group-hover:h-full" aria-hidden="true"></span>
+        <span class="absolute left-0 bottom-0 {{currentAnimationColor}} transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full" aria-hidden="true"></span>
+        Know Me
+        <!-- span::after -->
+        <span class="absolute left-0 bottom-0 {{currentAnimationColor}} transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full" aria-hidden="true"></span>
+        <span class="absolute w-0 h-0.5 right-0 top-0 {{currentAnimationColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+      </button>
+      <button (click)="downloadCV()" (mouseover)="changeAnimationColor()" class="mt-4 ml-4 group animate-scale-wave delay-6 relative border-black border-1 border shadow-xl inline-flex items-center px-3 py-1.5 bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-xl hover:border-none active:top-0.5 focus:outline-none">
+        <!-- span::before -->
+        <span class="absolute h-0 w-0.5 right-0 top-0 {{currentAnimationColor}} transition-all duration-500 ease-out group-hover:h-full" aria-hidden="true"></span>
+        <span class="absolute left-0 bottom-0 {{currentAnimationColor}} transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full" aria-hidden="true"></span>
+        Download CV
+        <!-- span::after -->
+        <span class="absolute left-0 bottom-0 {{currentAnimationColor}} transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full" aria-hidden="true"></span>
+        <span class="absolute w-0 h-0.5 right-0 top-0 {{currentAnimationColor}} transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"></span>
+      
+      </button>
+  </div>
+  <hr class="my-4 animate-scale-wave delay-7">
+  <app-social-icons class="animate-scale-wave delay-8"></app-social-icons>
