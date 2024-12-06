@@ -43,8 +43,8 @@ export class ProfileDetailsComponent {
 
     this.isDownloading = true;
     const link = document.createElement('a');
-    link.href = 'assets/Sam.docx';
-    link.download = 'Sam.docx';
+    link.href = 'assets/SamiullaMujawar_Resume.pdf';
+    link.download = 'SamiullaMujawar_Resume.pdf';
     link.click();
 
     this.snackBar.open('Downloaded ..!','Enjoy !',{ horizontalPosition : 'right', verticalPosition : 'top', duration : 3000});

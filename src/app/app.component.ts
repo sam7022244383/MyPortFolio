@@ -18,6 +18,14 @@ export class AppComponent {
   faXmark = faXmark;
   faCopyright = faCopyright;
   menuOpen = false;
+  routeTitleMap: { [key: string]: string } = {
+    'about-site': 'About Site - Samiulla Mujawar',
+    'about': 'About - Samiulla Mujawar',
+    'experience': 'Experience - Samiulla Mujawar',
+    'projects': 'Projects - Samiulla Mujawar',
+    'personal': 'Personal Details - Samiulla Mujawar',
+    'contact': 'Contact - Samiulla Mujawar',
+  };
 
 constructor(private titleService: Title, private router : Router , private viewportScroller: ViewportScroller )
 {
@@ -50,29 +58,13 @@ ngOnInit(): void {
 
 updateTitleBasedOnRoute(): void {
   const routePath = this.router.url;
-  let pageTitle = 'Samiulla Mujawar';
-
-  if (routePath.includes('about-site')) {
-    pageTitle = 'About Site - Samiulla Mujawar';
-  } 
-  else if (routePath.includes('about')) {
-    pageTitle = 'About - Samiulla Mujawar';
-  } 
-  else if (routePath.includes('experience')) {
-    pageTitle = 'Experience - Samiulla Mujawar';
-  } 
-  else if (routePath.includes('projects')) {
-    pageTitle = 'Projects - Samiulla Mujawar';
-  }
-  else if (routePath.includes('personal')) {
-    pageTitle = 'Personal Details - Samiulla Mujawar';
-  }
-  else if (routePath.includes('contact')) {
-    pageTitle = 'Contact - Samiulla Mujawar';
-  }
+  const pageTitle = Object.entries(this.routeTitleMap).find(([key]) =>
+    routePath.includes(key)
+  )?.[1] || 'Samiulla Mujawar';
 
   this.titleService.setTitle(pageTitle);
 }
+
 
 
   toggleMenu() {

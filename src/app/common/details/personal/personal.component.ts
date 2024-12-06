@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faMotorcycle, faTableTennisPaddleBall, faGamepad, faDumbbell, faRunning, faBicycle, faVolleyball, faMusic,faHeadphones, faEarthAsia, faMicrochip } from '@fortawesome/free-solid-svg-icons';
+import { faMotorcycle, faTableTennisPaddleBall, faGamepad, faDumbbell, faRunning, faBicycle, faVolleyball, faMusic,faHeadphones, faEarthAsia, faMicrochip, faBaseballBall  } from '@fortawesome/free-solid-svg-icons';
 import { StylingService } from '../../../services/styling.service';
 
 
@@ -25,6 +25,7 @@ export class PersonalComponent {
   faHeadphones = faHeadphones;
   faEarthAsia = faEarthAsia;
   faMicrochip = faMicrochip;
+  faCricket = faBaseballBall;
 
   currentColor: string = '';
 

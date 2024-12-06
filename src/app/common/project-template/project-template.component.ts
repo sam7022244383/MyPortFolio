@@ -76,6 +76,30 @@ export class ProjectTemplateComponent {
         { skillname: 'LinQ', img: 'assets/skills/linq.png' },
         { skillname: 'Git', img: 'assets/skills/git.png' },
       ]
+    },
+    {
+      projectName: 'Azure Functions (Practice)',
+      description: 'Demo Project to get knowledge of Azure Functions in real time scenario',
+      skills: [
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: 'Git', img: 'assets/skills/git.png' },
+        {skillname : 'Azure Functions' , img: 'assets/skills/Azure Function.png'}
+      ]
+    },
+    {
+      projectName : 'JWT Token Implementation (Practice)',
+      description : 'Demo Project where I implemented JWT Token, Global Exception handling, API Versioning ,Custom Validators.',
+      skills :  [
+        {skillname : 'C#' ,img: 'assets/skills/c-sharp.png' },
+        {skillname : 'JWT Token' , img : 'assets/skills/jwttoken.png'}
+      ]
+    },
+    {
+      projectName : 'RailTracManager Frontend (Practice)',
+      description : 'Demo Project where I implemented JWT Token, Global Exception handling, API Versioning ,Custom Validators.',
+      skills :  [
+        {skillname : 'Angular' ,img: 'assets/skills/Angular.png' },
+      ]
     }
   ]
   projects: Project[] = [];

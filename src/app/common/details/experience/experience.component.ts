@@ -14,7 +14,7 @@ import { DateDiffCalculatorService } from '../../../services/date-diff-calculato
 })
 export class ExperienceComponent {
   startDateTotal = new Date('2020-12-31');
-  startDate = new Date('2023-03-01');
+  startDate = new Date('2024-07-01');
   timespan = signal<string>('1 month');
   timespanTotal = signal<string>('1 month');
 

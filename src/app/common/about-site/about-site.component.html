@@ -25,7 +25,7 @@
                     </div>
                     <div class="flex flex-wrap mx-6 mb-2 gap-1 px-1 py-3 animate-slideIn-7">
                         <div *ngFor="let skill of skills">
-                            <div class="flex justify-center items-center border-sky-200 bg-white rounded-lg h-8 px-1 900px:h-10 border-2 animate-slideIn-4">
+                            <div class="hover:bg-sky-100 hover:scale-105 transition-transform duration-300 flex justify-center items-center border-sky-200 bg-white rounded-lg h-8 px-1 900px:h-10 border-2 animate-slideIn-4">
                               <img [src] = "skill.img" [alt]="skill.skillname" class="w-4 h-4 900px:w-6 900px:h-6">
                               <span class="text-xs 900px:p-1 pl-2 font-semibold">{{skill.skillname}}</span>
                           </div>
