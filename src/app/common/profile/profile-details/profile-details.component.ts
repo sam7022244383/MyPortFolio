@@ -7,13 +7,14 @@ import {
   MatSnackBarAction,
   MatSnackBarActions,
   MatSnackBarLabel,
+  MatSnackBarModule,
   MatSnackBarRef,
 } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-profile-details',
   standalone: true,
-  imports: [SocialIconsComponent],
+  imports: [SocialIconsComponent,MatSnackBarModule],
   templateUrl: './profile-details.component.html',
   styleUrl: './profile-details.component.css'
 })
@@ -46,8 +47,6 @@ export class ProfileDetailsComponent {
     link.href = 'assets/SamiullaMujawar_Resume.pdf';
     link.download = 'SamiullaMujawar_Resume.pdf';
     link.click();
-
-    this.snackBar.open('Downloaded ..!','Enjoy !',{ horizontalPosition : 'right', verticalPosition : 'top', duration : 3000});
 
     setTimeout(() => {
       this.isDownloading = false;

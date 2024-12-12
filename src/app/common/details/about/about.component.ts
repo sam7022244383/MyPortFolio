@@ -72,3 +72,7 @@ export interface Skill{
   skillname : string;
   img : string;
 }
+
+export interface RolsandResponsibilities {
+  Roles : string
+}

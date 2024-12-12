@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Skill } from '../details/about/about.component';
+import { RolsandResponsibilities, Skill } from '../details/about/about.component';
 import { Observable, interval, map, take } from 'rxjs';
 import { CommonModule } from '@angular/common';
 interface Project{
   projectName : string;
   description : string;
-  skills : Skill[]
+  skills : Skill[];
+  RolesAndResponsibilities? : RolsandResponsibilities[];
 }
 @Component({
   selector: 'app-project-template',
@@ -16,15 +17,7 @@ interface Project{
 })
 export class ProjectTemplateComponent {
   project: Project[] = [
-    {
-      projectName: ' Wing Stop',
-      description: 'Developed an Investment Calculator that analyzes the feasibility of market indices and individual stocks over time, integrating real-time data from Alpha Vantage and Twelve Data APIs. Visualized investment trends and performance using Highcharts for dynamic, interactive charts, enabling insightful decision-making through historical and comparative data analysis.',
-      skills: [
-        { skillname: 'HTML', img: 'assets/skills/html.png' },
-        { skillname: 'CSS', img: 'assets/skills/css.png' },
-        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' }
-      ]
-    },
+
     {
       projectName: 'BOOTCAMP',
       description: 'The Project Gives Feasibility For IMRIEL TECHNOLOGY Employees To Undergo The Specific Training Which Will Be Assigned By Their Respective Mentor. Similar To Udemy.',
@@ -38,6 +31,12 @@ export class ProjectTemplateComponent {
         { skillname: 'MS SQL', img: 'assets/skills/database.png' },
         { skillname: 'Microsoft Azure', img: 'assets/skills/azure.png' },
         { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
+      ],
+      RolesAndResponsibilities :[
+        {Roles : "Participating In The Requirements Analysis."},
+        {Roles : "Writing Clean, Scalable Code. and Doing Full stack developemtn end to end"},
+        {Roles : "Reviewing the PR of fellow developers."},
+        {Roles : "Interacting with QA Team."}
       ]
     },
     {
@@ -53,6 +52,13 @@ export class ProjectTemplateComponent {
         { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
         { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' },
         { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+      ],
+      RolesAndResponsibilities :[
+        {Roles : "Participating In The Requirements Analysis."},
+        {Roles : "Writing Clean, Scalable Code. and Doing Full stack developemtn end to end"},
+        {Roles : "Interacting with the Clients."},
+        {Roles : "Providing feasibile Solutions to the Clients."},
+        {Roles : "Handling The Build And Deployments in Different Regions."},
       ]
     },
     {
@@ -63,6 +69,48 @@ export class ProjectTemplateComponent {
         { skillname: 'TypeScript', img: 'assets/skills/typescript.png' },
         { skillname: 'MS SQL', img: 'assets/skills/database.png' },
         { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
+      ],
+      RolesAndResponsibilities :[
+        {Roles : "Participating In The Requirements Analysis."},
+        {Roles : "Writing Clean, Scalable Code."},
+        {Roles : "Interacting with the Clients."},
+        {Roles : "Providing feasibile Solutions to the Clients."},
+        {Roles : "Handling The Build And Deployments in Different Regions."},
+      ]
+    },
+    {
+      projectName: 'OAO Online Account Opening ',
+      description: 'This Application Gives The Feasibility To Open Brokerage , Retirement , Plan Business Accounts For The Customers Who Want To Do Investment And The Data Which Customer Has Provided Will Be Verified By National Financial Service’s Through Web Services. Maintaining The Project Code Base Manually Through Git Command Line Interface (Git Bash) Without Jenkins.',
+      skills: [
+        { skillname: 'ASP.NET', img: 'assets/skills/Visual Studio.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+        { skillname: 'HTML', img: 'assets/skills/html.png' },
+        { skillname: 'CSS', img: 'assets/skills/css.png' },
+        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
+      ],
+      RolesAndResponsibilities :[
+        {Roles : "Single Resource To The Project Doing Full Stack Development Independently Without Team Lead And Technical Lead."},
+        {Roles : "Participating In The Requirements Analysis."},
+        {Roles : "Writing Clean, Scalable Code Using C# Programming Language."},
+        {Roles : "Interacting With Client’s and Handling The Build And Deployments in Different Regions."},
+        {Roles : "Handling The Releases Independently, Co-Ordinating With QA Team And Business Analyst."},
+        {Roles : "if Any Issue Comes In Any Of The Environment, I Am The First Point Of Contact As I Am Single Developer In The Project So Need To Be Available At Every Point Of Time If Any Issues Comes In Any Of The Environment."},
+      ]
+    },
+    {
+      projectName: ' Wing Stop',
+      description: 'Developed an Investment Calculator that analyzes the feasibility of market indices and individual stocks over time, integrating real-time data from Alpha Vantage and Twelve Data APIs. Visualized investment trends and performance using Highcharts for dynamic, interactive charts, enabling insightful decision-making through historical and comparative data analysis.',
+      skills: [
+        { skillname: 'HTML', img: 'assets/skills/html.png' },
+        { skillname: 'CSS', img: 'assets/skills/css.png' },
+        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' }
+      ],
+      RolesAndResponsibilities :[
+        {Roles : "Participating In The Requirements Analysis."},
+        {Roles : "Writing Clean, Scalable Code."},
+        {Roles : "Interacting with the Clients."},
+        {Roles : "Providing feasibile Solutions to the Clients."},
       ]
     },
     {
