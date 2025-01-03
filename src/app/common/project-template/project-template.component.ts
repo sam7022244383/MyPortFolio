@@ -82,7 +82,7 @@ export class ProjectTemplateComponent {
       projectName: 'OAO Online Account Opening ',
       description: 'This Application Gives The Feasibility To Open Brokerage , Retirement , Plan Business Accounts For The Customers Who Want To Do Investment And The Data Which Customer Has Provided Will Be Verified By National Financial Service’s Through Web Services. Maintaining The Project Code Base Manually Through Git Command Line Interface (Git Bash) Without Jenkins.',
       skills: [
-        { skillname: 'ASP.NET', img: 'assets/skills/Visual Studio.png' },
+        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
         { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
         { skillname: 'MS SQL', img: 'assets/skills/database.png' },
         { skillname: 'HTML', img: 'assets/skills/html.png' },

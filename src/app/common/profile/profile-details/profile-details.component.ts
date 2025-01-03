@@ -44,8 +44,8 @@ export class ProfileDetailsComponent {
 
     this.isDownloading = true;
     const link = document.createElement('a');
-    link.href = 'assets/SamiullaMujawar_Resume.pdf';
-    link.download = 'SamiullaMujawar_Resume.pdf';
+    link.href = 'assets/SamiullaMujawar_.NetFullStackDeveloper_4YearsOfExperience.pdf';
+    link.download = 'SamiullaMujawar_.NetFullStackDeveloper_4YearsOfExperience.pdf';
     link.click();
 
     setTimeout(() => {
